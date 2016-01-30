@@ -11,5 +11,6 @@ class Word < TileGroup
   def score
 	points = 0
 	get_tiles.each { |x| points += @point_hash[x] }
+	points
   end
 end
