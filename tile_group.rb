@@ -1,17 +1,13 @@
 class TileGroup
 
   def initialize
-    @tiles = {}
+    @tiles = Array.new
   end
 
   def append(tile)
     case tile
       when Symbol
-        if @tiles.has_key?(tile)
-          @tiles[tile] = @tiles[tile] + 1;
-        else
-          @tiles[tile] = 1;
-        end
+        @tiles << tile;
     end
     return @tiles
   end
@@ -19,14 +15,14 @@ class TileGroup
   def remove(tile)
     case tile
       when Symbol
-        if @tiles.has_key?(tile)
-          @tiles[tile] = @tiles[tile] - 1;
-        else
-          @tiles[tile] = 0;
+        index = @tiles.index(tile)
+        if index != nil
+          @tiles.delete_at(index)
         end
     end
     return @tiles
   end
+
 
   def to_s
 
