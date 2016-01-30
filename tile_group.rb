@@ -16,15 +16,12 @@ class TileGroup
     case tile
       when Symbol
         index = @tiles.index(tile)
-        if index != nil
-          @tiles.delete_at(index)
-        end
+        @tiles.delete_at(index) if index != nil
     end
     return @tiles
   end
 
-
   def to_s
-
+    @tiles.each {|x| x.to_s }.join(",")
   end
 end
