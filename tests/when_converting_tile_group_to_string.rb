@@ -22,12 +22,22 @@ class WhenConvertingTileGroupToString < Minitest::Test
 
 
   def test_convert_multi_tile_group_to_string
-
+    @tg.append(:a)
+    @tg.append(:u)
+    @tg.append(:g)
+    assert_equal "a,u,g", @tg.to_s
   end
 
-
+  
   def test_convert_multi_tile_group_with_repeating_values_to_string
-
+    @tg.append(:a)
+    @tg.append(:u)
+    @tg.append(:a)
+    @tg.append(:a)
+    @tg.append(:u)
+    @tg.append(:g)
+    @tg.append(:u)
+    assert_equal "a,u,a,a,u,g,u", @tg.to_s
   end
 
 end
