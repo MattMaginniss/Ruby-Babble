@@ -1,11 +1,11 @@
 require "minitest/autorun"
-require_relative "vending_machine.rb"
+require_relative "../tile_group.rb"
 
 class WhenConvertingTileGroupToString < Minitest::Test
 
 
   def setup
-
+    @tg = TileGroup.New
   end
 
 
