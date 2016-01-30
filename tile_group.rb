@@ -7,9 +7,9 @@ class TileGroup
   def append(tile)
     case tile
       when Symbol
-        @tiles << tile;
+        @tiles << tile
     end
-    return @tiles
+    @tiles
   end
 
   def remove(tile)
@@ -18,9 +18,13 @@ class TileGroup
         index = @tiles.index(tile)
         @tiles.delete_at(index) if index != nil
     end
-    return @tiles
+    @tiles
   end
 
+  def get_tiles
+	@tiles
+  end
+  
   def to_s
     @tiles.each {|x| x.to_s }.join(",")
   end
