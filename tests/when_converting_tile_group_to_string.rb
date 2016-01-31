@@ -26,7 +26,7 @@ class WhenConvertingTileGroupToString < Minitest::Test
     @tg.append(:a)
     @tg.append(:u)
     @tg.append(:g)
-    assert_equal "a,u,g", @tg.to_s
+    assert_equal "a u g", @tg.to_s
   end
 
   # this tests the to_s method to see if it correctly outputs a string with all the tiles even if some are repeated
@@ -38,7 +38,7 @@ class WhenConvertingTileGroupToString < Minitest::Test
     @tg.append(:u)
     @tg.append(:g)
     @tg.append(:u)
-    assert_equal "a,u,a,a,u,g,u", @tg.to_s
+    assert_equal "a u a a u g u", @tg.to_s
   end
 
 end

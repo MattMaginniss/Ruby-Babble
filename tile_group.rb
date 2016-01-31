@@ -31,6 +31,6 @@ class TileGroup
 
   # This will return a string that has all the values of the tiles array separated by commas
   def to_s
-    @tiles.each {|x| x.to_s }.join(",")
+    @tiles.each {|x| x.to_s }.join(" ")
   end
 end
