@@ -1,3 +1,4 @@
+# Class that represents a group of letter tiles for Scrabble
 class TileGroup
 
   # This method initializes an object of the type TileGroup

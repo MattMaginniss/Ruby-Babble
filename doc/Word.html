@@ -87,6 +87,8 @@
 
   <section class="description">
     
+<p>Class that represents a group of letters that form a word</p>
+
   </section>
 
   
@@ -132,7 +134,7 @@
 
           
           <div class="method-source-code" id="new-source">
-            <pre><span class="ruby-comment"># File word.rb, line 4</span>
+            <pre><span class="ruby-comment"># File word.rb, line 5</span>
 <span class="ruby-keyword">def</span> <span class="ruby-identifier">initialize</span>
       <span class="ruby-keyword">super</span>
       <span class="ruby-ivar">@point_hash</span> = { <span class="ruby-identifier">a</span><span class="ruby-operator">:</span> <span class="ruby-value">1</span>, <span class="ruby-identifier">b</span><span class="ruby-operator">:</span> <span class="ruby-value">3</span>, <span class="ruby-identifier">c</span><span class="ruby-operator">:</span> <span class="ruby-value">3</span>, <span class="ruby-identifier">d</span><span class="ruby-operator">:</span> <span class="ruby-value">4</span>, <span class="ruby-identifier">e</span><span class="ruby-operator">:</span> <span class="ruby-value">1</span>, <span class="ruby-identifier">f</span><span class="ruby-operator">:</span> <span class="ruby-value">4</span>,
@@ -178,7 +180,7 @@ contained in the word</p>
 
           
           <div class="method-source-code" id="score-source">
-            <pre><span class="ruby-comment"># File word.rb, line 13</span>
+            <pre><span class="ruby-comment"># File word.rb, line 14</span>
 <span class="ruby-keyword">def</span> <span class="ruby-identifier">score</span>
       <span class="ruby-identifier">points</span> = <span class="ruby-value">0</span>
       <span class="ruby-identifier">get_tiles</span>.<span class="ruby-identifier">each</span> { <span class="ruby-operator">|</span><span class="ruby-identifier">x</span><span class="ruby-operator">|</span> <span class="ruby-identifier">points</span> <span class="ruby-operator">+=</span> <span class="ruby-ivar">@point_hash</span>[<span class="ruby-identifier">x</span>] }

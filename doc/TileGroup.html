@@ -93,6 +93,8 @@
 
   <section class="description">
     
+<p>Class that represents a group of letter tiles for Scrabble</p>
+
   </section>
 
   
@@ -134,7 +136,7 @@ href="TileGroup.html">TileGroup</a></p>
 
           
           <div class="method-source-code" id="new-source">
-            <pre><span class="ruby-comment"># File tile_group.rb, line 4</span>
+            <pre><span class="ruby-comment"># File tile_group.rb, line 5</span>
 <span class="ruby-keyword">def</span> <span class="ruby-identifier">initialize</span>
   <span class="ruby-ivar">@tiles</span> = <span class="ruby-constant">Array</span>.<span class="ruby-identifier">new</span>
 <span class="ruby-keyword">end</span></pre>
@@ -175,7 +177,7 @@ href="TileGroup.html">TileGroup</a></p>
 
           
           <div class="method-source-code" id="append-source">
-            <pre><span class="ruby-comment"># File tile_group.rb, line 9</span>
+            <pre><span class="ruby-comment"># File tile_group.rb, line 10</span>
 <span class="ruby-keyword">def</span> <span class="ruby-identifier">append</span>(<span class="ruby-identifier">tile</span>)
   <span class="ruby-keyword">case</span> <span class="ruby-identifier">tile</span>
     <span class="ruby-keyword">when</span> <span class="ruby-constant">Symbol</span>
@@ -212,7 +214,7 @@ href="TileGroup.html">TileGroup</a></p>
 
           
           <div class="method-source-code" id="get_tiles-source">
-            <pre><span class="ruby-comment"># File tile_group.rb, line 28</span>
+            <pre><span class="ruby-comment"># File tile_group.rb, line 29</span>
 <span class="ruby-keyword">def</span> <span class="ruby-identifier">get_tiles</span>
       <span class="ruby-ivar">@tiles</span>
 <span class="ruby-keyword">end</span></pre>
@@ -246,7 +248,7 @@ array and return the modified array</p>
 
           
           <div class="method-source-code" id="remove-source">
-            <pre><span class="ruby-comment"># File tile_group.rb, line 18</span>
+            <pre><span class="ruby-comment"># File tile_group.rb, line 19</span>
 <span class="ruby-keyword">def</span> <span class="ruby-identifier">remove</span>(<span class="ruby-identifier">tile</span>)
   <span class="ruby-keyword">case</span> <span class="ruby-identifier">tile</span>
     <span class="ruby-keyword">when</span> <span class="ruby-constant">Symbol</span>
@@ -285,9 +287,9 @@ separated by commas</p>
 
           
           <div class="method-source-code" id="to_s-source">
-            <pre><span class="ruby-comment"># File tile_group.rb, line 33</span>
+            <pre><span class="ruby-comment"># File tile_group.rb, line 34</span>
 <span class="ruby-keyword">def</span> <span class="ruby-identifier">to_s</span>
-  <span class="ruby-ivar">@tiles</span>.<span class="ruby-identifier">each</span> {<span class="ruby-operator">|</span><span class="ruby-identifier">x</span><span class="ruby-operator">|</span> <span class="ruby-identifier">x</span>.<span class="ruby-identifier">to_s</span> }.<span class="ruby-identifier">join</span>(<span class="ruby-string">&quot;,&quot;</span>)
+  <span class="ruby-ivar">@tiles</span>.<span class="ruby-identifier">each</span> {<span class="ruby-operator">|</span><span class="ruby-identifier">x</span><span class="ruby-operator">|</span> <span class="ruby-identifier">x</span>.<span class="ruby-identifier">to_s</span> }.<span class="ruby-identifier">join</span>(<span class="ruby-string">&quot; &quot;</span>)
 <span class="ruby-keyword">end</span></pre>
           </div>
           

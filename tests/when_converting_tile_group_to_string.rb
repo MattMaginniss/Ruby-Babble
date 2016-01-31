@@ -1,6 +1,7 @@
 require "minitest/autorun"
 require_relative "../tile_group.rb"
 
+# Test class for the TileGroup's ToString Method
 class WhenConvertingTileGroupToString < Minitest::Test
 
 

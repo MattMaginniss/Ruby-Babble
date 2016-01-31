@@ -1,3 +1,4 @@
+# Class that represents a group of letters that form a word
 class Word < TileGroup
 
   # This initializes an object with the type Word

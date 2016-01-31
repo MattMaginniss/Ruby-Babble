@@ -1,6 +1,7 @@
 require "minitest/autorun"
 require_relative "../word.rb"
 
+# Test class for the Word's score method
 class WhenScoringWords < Minitest::Test
 
   # This method sets up the test class
