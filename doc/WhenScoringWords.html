@@ -205,7 +205,7 @@ equivalent to the value of that one tile</p>
           <div class="method-source-code" id="test_score_a_one_tile_word-source">
             <pre><span class="ruby-comment"># File tests/when_scoring_words.rb, line 19</span>
 <span class="ruby-keyword">def</span> <span class="ruby-identifier">test_score_a_one_tile_word</span>
-  <span class="ruby-ivar">@word</span>.<span class="ruby-identifier">append</span>(<span class="ruby-value">:a</span>)
+  <span class="ruby-ivar">@word</span>.<span class="ruby-identifier">append</span>(<span class="ruby-value">:A</span>)
   <span class="ruby-identifier">assert_equal</span> <span class="ruby-value">1</span>, <span class="ruby-ivar">@word</span>.<span class="ruby-identifier">score</span>
 <span class="ruby-keyword">end</span></pre>
           </div>
@@ -240,9 +240,9 @@ value equivalent to the sum of values of those tiles</p>
           <div class="method-source-code" id="test_score_a_word_with_multiple_different_tiles-source">
             <pre><span class="ruby-comment"># File tests/when_scoring_words.rb, line 26</span>
 <span class="ruby-keyword">def</span> <span class="ruby-identifier">test_score_a_word_with_multiple_different_tiles</span>
-  <span class="ruby-ivar">@word</span>.<span class="ruby-identifier">append</span>(<span class="ruby-value">:a</span>)
-  <span class="ruby-ivar">@word</span>.<span class="ruby-identifier">append</span>(<span class="ruby-value">:z</span>)
-  <span class="ruby-ivar">@word</span>.<span class="ruby-identifier">append</span>(<span class="ruby-value">:m</span>)
+  <span class="ruby-ivar">@word</span>.<span class="ruby-identifier">append</span>(<span class="ruby-value">:A</span>)
+  <span class="ruby-ivar">@word</span>.<span class="ruby-identifier">append</span>(<span class="ruby-value">:Z</span>)
+  <span class="ruby-ivar">@word</span>.<span class="ruby-identifier">append</span>(<span class="ruby-value">:M</span>)
   <span class="ruby-identifier">assert_equal</span> <span class="ruby-value">14</span>, <span class="ruby-ivar">@word</span>.<span class="ruby-identifier">score</span>
 <span class="ruby-keyword">end</span></pre>
           </div>
@@ -278,11 +278,11 @@ repeated.</p>
           <div class="method-source-code" id="test_score_a_word_with_recurring_tiles-source">
             <pre><span class="ruby-comment"># File tests/when_scoring_words.rb, line 34</span>
 <span class="ruby-keyword">def</span> <span class="ruby-identifier">test_score_a_word_with_recurring_tiles</span>
-  <span class="ruby-ivar">@word</span>.<span class="ruby-identifier">append</span>(<span class="ruby-value">:a</span>)
-  <span class="ruby-ivar">@word</span>.<span class="ruby-identifier">append</span>(<span class="ruby-value">:z</span>)
-  <span class="ruby-ivar">@word</span>.<span class="ruby-identifier">append</span>(<span class="ruby-value">:z</span>)
-  <span class="ruby-ivar">@word</span>.<span class="ruby-identifier">append</span>(<span class="ruby-value">:m</span>)
-  <span class="ruby-ivar">@word</span>.<span class="ruby-identifier">append</span>(<span class="ruby-value">:a</span>)
+  <span class="ruby-ivar">@word</span>.<span class="ruby-identifier">append</span>(<span class="ruby-value">:A</span>)
+  <span class="ruby-ivar">@word</span>.<span class="ruby-identifier">append</span>(<span class="ruby-value">:Z</span>)
+  <span class="ruby-ivar">@word</span>.<span class="ruby-identifier">append</span>(<span class="ruby-value">:Z</span>)
+  <span class="ruby-ivar">@word</span>.<span class="ruby-identifier">append</span>(<span class="ruby-value">:M</span>)
+  <span class="ruby-ivar">@word</span>.<span class="ruby-identifier">append</span>(<span class="ruby-value">:A</span>)
   <span class="ruby-identifier">assert_equal</span> <span class="ruby-value">25</span>, <span class="ruby-ivar">@word</span>.<span class="ruby-identifier">score</span>
 <span class="ruby-keyword">end</span></pre>
           </div>

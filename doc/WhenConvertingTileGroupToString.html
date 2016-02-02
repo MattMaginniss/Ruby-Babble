@@ -206,10 +206,10 @@ the tiles correctly in a string</p>
           <div class="method-source-code" id="test_convert_multi_tile_group_to_string-source">
             <pre><span class="ruby-comment"># File tests/when_converting_tile_group_to_string.rb, line 26</span>
 <span class="ruby-keyword">def</span> <span class="ruby-identifier">test_convert_multi_tile_group_to_string</span>
-  <span class="ruby-ivar">@tg</span>.<span class="ruby-identifier">append</span>(<span class="ruby-value">:a</span>)
-  <span class="ruby-ivar">@tg</span>.<span class="ruby-identifier">append</span>(<span class="ruby-value">:u</span>)
-  <span class="ruby-ivar">@tg</span>.<span class="ruby-identifier">append</span>(<span class="ruby-value">:g</span>)
-  <span class="ruby-identifier">assert_equal</span> <span class="ruby-string">&quot;a u g&quot;</span>, <span class="ruby-ivar">@tg</span>.<span class="ruby-identifier">to_s</span>
+  <span class="ruby-ivar">@tg</span>.<span class="ruby-identifier">append</span>(<span class="ruby-value">:A</span>)
+  <span class="ruby-ivar">@tg</span>.<span class="ruby-identifier">append</span>(<span class="ruby-value">:U</span>)
+  <span class="ruby-ivar">@tg</span>.<span class="ruby-identifier">append</span>(<span class="ruby-value">:G</span>)
+  <span class="ruby-identifier">assert_equal</span> <span class="ruby-string">&quot;A U G&quot;</span>, <span class="ruby-ivar">@tg</span>.<span class="ruby-identifier">to_s</span>
 <span class="ruby-keyword">end</span></pre>
           </div>
           
@@ -243,14 +243,14 @@ the tiles even if some are repeated</p>
           <div class="method-source-code" id="test_convert_multi_tile_group_with_repeating_values_to_string-source">
             <pre><span class="ruby-comment"># File tests/when_converting_tile_group_to_string.rb, line 34</span>
 <span class="ruby-keyword">def</span> <span class="ruby-identifier">test_convert_multi_tile_group_with_repeating_values_to_string</span>
-  <span class="ruby-ivar">@tg</span>.<span class="ruby-identifier">append</span>(<span class="ruby-value">:a</span>)
-  <span class="ruby-ivar">@tg</span>.<span class="ruby-identifier">append</span>(<span class="ruby-value">:u</span>)
-  <span class="ruby-ivar">@tg</span>.<span class="ruby-identifier">append</span>(<span class="ruby-value">:a</span>)
-  <span class="ruby-ivar">@tg</span>.<span class="ruby-identifier">append</span>(<span class="ruby-value">:a</span>)
-  <span class="ruby-ivar">@tg</span>.<span class="ruby-identifier">append</span>(<span class="ruby-value">:u</span>)
-  <span class="ruby-ivar">@tg</span>.<span class="ruby-identifier">append</span>(<span class="ruby-value">:g</span>)
-  <span class="ruby-ivar">@tg</span>.<span class="ruby-identifier">append</span>(<span class="ruby-value">:u</span>)
-  <span class="ruby-identifier">assert_equal</span> <span class="ruby-string">&quot;a u a a u g u&quot;</span>, <span class="ruby-ivar">@tg</span>.<span class="ruby-identifier">to_s</span>
+  <span class="ruby-ivar">@tg</span>.<span class="ruby-identifier">append</span>(<span class="ruby-value">:A</span>)
+  <span class="ruby-ivar">@tg</span>.<span class="ruby-identifier">append</span>(<span class="ruby-value">:U</span>)
+  <span class="ruby-ivar">@tg</span>.<span class="ruby-identifier">append</span>(<span class="ruby-value">:A</span>)
+  <span class="ruby-ivar">@tg</span>.<span class="ruby-identifier">append</span>(<span class="ruby-value">:A</span>)
+  <span class="ruby-ivar">@tg</span>.<span class="ruby-identifier">append</span>(<span class="ruby-value">:U</span>)
+  <span class="ruby-ivar">@tg</span>.<span class="ruby-identifier">append</span>(<span class="ruby-value">:G</span>)
+  <span class="ruby-ivar">@tg</span>.<span class="ruby-identifier">append</span>(<span class="ruby-value">:U</span>)
+  <span class="ruby-identifier">assert_equal</span> <span class="ruby-string">&quot;A U A A U G U&quot;</span>, <span class="ruby-ivar">@tg</span>.<span class="ruby-identifier">to_s</span>
 <span class="ruby-keyword">end</span></pre>
           </div>
           
@@ -284,8 +284,8 @@ tiles in the tile group</p>
           <div class="method-source-code" id="test_convert_single_tile_group_to_string-source">
             <pre><span class="ruby-comment"># File tests/when_converting_tile_group_to_string.rb, line 20</span>
 <span class="ruby-keyword">def</span> <span class="ruby-identifier">test_convert_single_tile_group_to_string</span>
-  <span class="ruby-ivar">@tg</span>.<span class="ruby-identifier">append</span>(<span class="ruby-value">:a</span>)
-  <span class="ruby-identifier">assert_equal</span> <span class="ruby-string">&quot;a&quot;</span>, <span class="ruby-ivar">@tg</span>.<span class="ruby-identifier">to_s</span>
+  <span class="ruby-ivar">@tg</span>.<span class="ruby-identifier">append</span>(<span class="ruby-value">:A</span>)
+  <span class="ruby-identifier">assert_equal</span> <span class="ruby-string">&quot;A&quot;</span>, <span class="ruby-ivar">@tg</span>.<span class="ruby-identifier">to_s</span>
 <span class="ruby-keyword">end</span></pre>
           </div>
           

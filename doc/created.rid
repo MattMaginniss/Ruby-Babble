@@ -1,8 +1,8 @@
-Sun, 31 Jan 2016 17:25:28 +0000
+Tue, 02 Feb 2016 00:34:18 +0000
 ./Gemfile	Wed, 27 Jan 2016 23:55:45 +0000
 ./Gemfile.lock	Thu, 28 Jan 2016 00:43:49 +0000
 ./Rakefile	Thu, 28 Jan 2016 00:44:22 +0000
-./tests/when_converting_tile_group_to_string.rb	Sun, 31 Jan 2016 17:23:14 +0000
-./tests/when_scoring_words.rb	Sun, 31 Jan 2016 17:23:27 +0000
-./tile_group.rb	Sun, 31 Jan 2016 17:22:28 +0000
-./word.rb	Sun, 31 Jan 2016 17:22:57 +0000
+./tests/when_converting_tile_group_to_string.rb	Tue, 02 Feb 2016 00:33:42 +0000
+./tests/when_scoring_words.rb	Tue, 02 Feb 2016 00:33:05 +0000
+./tile_group.rb	Tue, 02 Feb 2016 00:31:09 +0000
+./word.rb	Tue, 02 Feb 2016 00:32:40 +0000

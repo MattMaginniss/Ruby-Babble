@@ -17,26 +17,26 @@ class WhenScoringWords < Minitest::Test
 
   # This will test to see if a word with one tile in it will return a value equivalent to the value of that one tile
   def test_score_a_one_tile_word
-    @word.append(:a)
+    @word.append(:A)
     assert_equal 1, @word.score
   end
 
 
   # This will test to see if a word with multiple tiles in it will return a value equivalent to the sum of values of those tiles
   def test_score_a_word_with_multiple_different_tiles
-    @word.append(:a)
-    @word.append(:z)
-    @word.append(:m)
+    @word.append(:A)
+    @word.append(:Z)
+    @word.append(:M)
     assert_equal 14, @word.score
   end
 
   # This will test to see if a word with multiple tiles in it will return a value equivalent to the sum of values of those tiles even if some are repeated.
   def test_score_a_word_with_recurring_tiles
-    @word.append(:a)
-    @word.append(:z)
-    @word.append(:z)
-    @word.append(:m)
-    @word.append(:a)
+    @word.append(:A)
+    @word.append(:Z)
+    @word.append(:Z)
+    @word.append(:M)
+    @word.append(:A)
     assert_equal 25, @word.score
   end
 
