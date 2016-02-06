@@ -16,7 +16,8 @@ class TileBag
   end
 
   def draw_tile
-    @bag.shuffle().pop
+    @bag.shuffle
+	@bag.pop
   end
 
   def empty?
