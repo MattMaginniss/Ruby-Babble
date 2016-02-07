@@ -137,10 +137,6 @@
             <pre><span class="ruby-comment"># File word.rb, line 5</span>
 <span class="ruby-keyword">def</span> <span class="ruby-identifier">initialize</span>
       <span class="ruby-keyword">super</span>
-      <span class="ruby-ivar">@point_hash</span> = { <span class="ruby-constant">A</span><span class="ruby-operator">:</span> <span class="ruby-value">1</span>, <span class="ruby-constant">B</span><span class="ruby-operator">:</span> <span class="ruby-value">3</span>, <span class="ruby-constant">C</span><span class="ruby-operator">:</span> <span class="ruby-value">3</span>, <span class="ruby-constant">D</span><span class="ruby-operator">:</span> <span class="ruby-value">4</span>, <span class="ruby-constant">E</span><span class="ruby-operator">:</span> <span class="ruby-value">1</span>, <span class="ruby-constant">F</span><span class="ruby-operator">:</span> <span class="ruby-value">4</span>,
-              <span class="ruby-constant">G</span><span class="ruby-operator">:</span> <span class="ruby-value">2</span>, <span class="ruby-constant">H</span><span class="ruby-operator">:</span> <span class="ruby-value">4</span>, <span class="ruby-constant">I</span><span class="ruby-operator">:</span> <span class="ruby-value">1</span>, <span class="ruby-constant">J</span><span class="ruby-operator">:</span> <span class="ruby-value">8</span>, <span class="ruby-constant">K</span><span class="ruby-operator">:</span> <span class="ruby-value">5</span>, <span class="ruby-constant">L</span><span class="ruby-operator">:</span> <span class="ruby-value">1</span>, <span class="ruby-constant">M</span><span class="ruby-operator">:</span> <span class="ruby-value">3</span>, <span class="ruby-constant">N</span><span class="ruby-operator">:</span> <span class="ruby-value">1</span>,
-              <span class="ruby-constant">O</span><span class="ruby-operator">:</span> <span class="ruby-value">1</span>, <span class="ruby-constant">P</span><span class="ruby-operator">:</span> <span class="ruby-value">3</span>, <span class="ruby-constant">Q</span><span class="ruby-operator">:</span> <span class="ruby-value">10</span>, <span class="ruby-constant">R</span><span class="ruby-operator">:</span> <span class="ruby-value">1</span>, <span class="ruby-constant">S</span><span class="ruby-operator">:</span> <span class="ruby-value">1</span>, <span class="ruby-constant">T</span><span class="ruby-operator">:</span> <span class="ruby-value">1</span>, <span class="ruby-constant">U</span><span class="ruby-operator">:</span> <span class="ruby-value">1</span>, <span class="ruby-constant">V</span><span class="ruby-operator">:</span> <span class="ruby-value">4</span>,
-              <span class="ruby-constant">W</span><span class="ruby-operator">:</span> <span class="ruby-value">4</span>, <span class="ruby-constant">X</span><span class="ruby-operator">:</span> <span class="ruby-value">8</span>, <span class="ruby-constant">Y</span><span class="ruby-operator">:</span> <span class="ruby-value">4</span>, <span class="ruby-constant">Z</span><span class="ruby-operator">:</span> <span class="ruby-value">10</span> }
 <span class="ruby-keyword">end</span></pre>
           </div>
           
@@ -180,10 +176,10 @@ contained in the word</p>
 
           
           <div class="method-source-code" id="score-source">
-            <pre><span class="ruby-comment"># File word.rb, line 14</span>
+            <pre><span class="ruby-comment"># File word.rb, line 10</span>
 <span class="ruby-keyword">def</span> <span class="ruby-identifier">score</span>
       <span class="ruby-identifier">points</span> = <span class="ruby-value">0</span>
-      <span class="ruby-identifier">get_tiles</span>.<span class="ruby-identifier">each</span> { <span class="ruby-operator">|</span><span class="ruby-identifier">x</span><span class="ruby-operator">|</span> <span class="ruby-identifier">points</span> <span class="ruby-operator">+=</span> <span class="ruby-ivar">@point_hash</span>[<span class="ruby-identifier">x</span>] }
+      <span class="ruby-identifier">get_tiles</span>.<span class="ruby-identifier">each</span> { <span class="ruby-operator">|</span><span class="ruby-identifier">x</span><span class="ruby-operator">|</span> <span class="ruby-identifier">points</span> <span class="ruby-operator">+=</span> <span class="ruby-constant">TileBag</span>.<span class="ruby-identifier">point_for</span>(<span class="ruby-identifier">x</span>) }
       <span class="ruby-identifier">points</span>
 <span class="ruby-keyword">end</span></pre>
           </div>
