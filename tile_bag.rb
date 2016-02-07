@@ -15,15 +15,19 @@ class TileBag
 
   end
 
+  # This will shuffle the array of tiles, remove and return 
+  # the tile on the end of the shuffled array.
   def draw_tile
     @bag.shuffle
 	@bag.pop
   end
 
+  # This method returns whether the bag is out of tiles.
   def empty?
     @bag.empty?
   end
 
+  # Class function to get the value for the input tile.
   def self.point_for (tile)
 	point_hash = { A: 1, B: 3, C: 3, D: 4, E: 1, F: 4, G: 2,
 					H: 4, I: 1, J: 8, K: 5, L: 1, M: 3, N: 1, 
