@@ -21,7 +21,6 @@ class WhenDrawingTiles < Minitest::Test
 
   # This tests to see the tiles in the bag are distributed as specified by scrabble rules.
   def test_has_proper_tile_distribution
-		
 	assert_equal(9, @tb.instance_variable_get(:@bag).count(:A))
 	assert_equal(2, @tb.instance_variable_get(:@bag).count(:B))
 	assert_equal(2, @tb.instance_variable_get(:@bag).count(:C))
@@ -48,7 +47,6 @@ class WhenDrawingTiles < Minitest::Test
 	assert_equal(1, @tb.instance_variable_get(:@bag).count(:X))
 	assert_equal(2, @tb.instance_variable_get(:@bag).count(:Y))
 	assert_equal(1, @tb.instance_variable_get(:@bag).count(:Z))
-	
   end
   
 end

@@ -12,7 +12,6 @@ class TileBag
             :G, :G, :G, :B, :B, :C, :C, :M, :M, :P, :P, :F,
             :F, :H, :H, :V, :V, :W, :W, :Y, :Y, :K, :J, :X,
             :Q, :Z]
-
   end
 
   # This will shuffle the array of tiles, remove and return 

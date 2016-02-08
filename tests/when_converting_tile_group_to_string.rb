@@ -13,7 +13,6 @@ class WhenConvertingTileGroupToString < Minitest::Test
   # This tests if you will get an empty string when the tile group has no tiles in it
   def test_convert_empty_group_to_string
     assert_equal "", @tg.to_s
-
   end
 
   # This tests to see if the to_s method will return a string with all the tiles in the tile group
