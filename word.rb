@@ -9,7 +9,7 @@ class Word < TileGroup
   # This will calculate and return the point value/score of the letters contained in the word
   def score
 	points = 0
-	get_tiles.each { |x| points += TileBag.point_for(x) }
+	get_tiles.each { |x| points += TileBag.points_for(x) }
 	points
   end
 end
