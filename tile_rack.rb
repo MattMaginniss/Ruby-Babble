@@ -3,11 +3,11 @@ class TileRack < TileGroup
 
   # This initializes an object with the type Tile Rack that is child of TileGroup
   def initialize
-	super
+	  super
   end
 
   def number_of_tiles_needed
-  
+    7 - @tiles.length
   end
   
   def has_tiles_for?(text)
