@@ -15,7 +15,7 @@ class TileRack < TileGroup
   end
   
   def remove_word(text)
-  
+    text.each_char { |x| @tiles.remove(x.to_sym) }
   end
   
 end

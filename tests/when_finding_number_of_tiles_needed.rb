@@ -6,14 +6,16 @@ class WhenFindingNumberOfTilesNeeded  < Minitest::Test
 
   # This method sets up the test class
   def setup
-	@tr = TileRack.new
+	  @tr = TileRack.new
   end
 
   def test_empty_tile_rack_should_need_max_tiles
+
     assert_equal(7, @tr.number_of_tiles_needed)
   end
 
   def test_tile_rack_with_one_tile_should_need_max_minus_one_tiles
+
     @tr.append(:A)
     assert_equal(6, @tr.number_of_tiles_needed)
   end
@@ -27,7 +29,6 @@ class WhenFindingNumberOfTilesNeeded  < Minitest::Test
   end
 
   def test_that_full_tile_rack_doesnt_need_any_tiles
-
 
     @tr.append(:A)
     @tr.append(:U)
