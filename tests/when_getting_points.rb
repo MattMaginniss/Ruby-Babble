@@ -9,7 +9,7 @@ class WhenGettingPoints < Minitest::Test
 	assert_equal 1, TileBag.points_for(:A)
 	assert_equal 3, TileBag.points_for(:B)
 	assert_equal 3, TileBag.points_for(:C)
-	assert_equal 2, TileBag.points_for(:D)
+	assert_equal 4, TileBag.points_for(:D)
 	assert_equal 1, TileBag.points_for(:E)
 	assert_equal 4, TileBag.points_for(:F)
 	assert_equal 2, TileBag.points_for(:G)
