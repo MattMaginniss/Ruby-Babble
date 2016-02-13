@@ -26,7 +26,7 @@ class WhenConvertingTileGroupToString < Minitest::Test
     @tg.append(:A)
     @tg.append(:U)
     @tg.append(:G)
-    assert_equal "A U G", @tg.to_s
+    assert_equal "AUG", @tg.to_s
   end
 
   # this tests the to_s method to see if it correctly outputs a string with all the tiles even if some are repeated
@@ -38,7 +38,7 @@ class WhenConvertingTileGroupToString < Minitest::Test
     @tg.append(:U)
     @tg.append(:G)
     @tg.append(:U)
-    assert_equal "A U A A U G U", @tg.to_s
+    assert_equal "AUAAUGU", @tg.to_s
   end
 
 end
