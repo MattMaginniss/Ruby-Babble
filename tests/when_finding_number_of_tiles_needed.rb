@@ -9,17 +9,20 @@ class WhenFindingNumberOfTilesNeeded  < Minitest::Test
 	  @tr = TileRack.new
   end
 
+  # Test to make sure an empty tile rack needs 7 tiles.
   def test_empty_tile_rack_should_need_max_tiles
 
     assert_equal(7, @tr.number_of_tiles_needed)
   end
 
+  # Test that the tile rack with 1 tile needs 6 more.
   def test_tile_rack_with_one_tile_should_need_max_minus_one_tiles
 
     @tr.append(:A)
     assert_equal(6, @tr.number_of_tiles_needed)
   end
 
+  # Test that a tile rack with several(3) tiles, need 4 tiles.
   def test_tile_rack_with_several_tiles_should_need_some_tiles
 
     @tr.append(:A)
@@ -28,6 +31,7 @@ class WhenFindingNumberOfTilesNeeded  < Minitest::Test
     assert_equal(4, @tr.number_of_tiles_needed)
   end
 
+  # Test a tile rack with all 7 tiles need 0 tiles.
   def test_that_full_tile_rack_doesnt_need_any_tiles
 
     @tr.append(:A)

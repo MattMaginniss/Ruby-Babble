@@ -15,14 +15,14 @@ class TileGroup
     @tiles
   end
 
-  # This will find the first instance of the input symbol, remove it from the array and return the modified array
+  # This will find the first instance of the input symbol, remove it from the array and letter
   def remove(tile)
     case tile
       when Symbol
         index = @tiles.index(tile)
         @tiles.delete_at(index) if index != nil
+		return tile.to_s
     end
-    @tiles
   end
 
   # This will get all the tiles array and return it
