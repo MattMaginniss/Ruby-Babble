@@ -11,7 +11,19 @@ class TileRack < TileGroup
   end
   
   def has_tiles_for?(text)
-  
+	tile_string = to_s
+	result = true
+	
+	text.each_char do |x|
+		input_char_count = text.count(x)
+		tiles_char_count = tile_string.count(x)
+		
+		if (input_char_count > tiles_char_count)
+			result = false
+		end
+	end
+	
+	result
   end
   
   def remove_word(text)
