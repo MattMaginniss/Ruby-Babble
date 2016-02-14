@@ -72,7 +72,7 @@
     
     <li ><a href="#method-c-new">::new</a>
     
-    <li ><a href="#method-c-point_for">::point_for</a>
+    <li ><a href="#method-c-points_for">::points_for</a>
     
     <li ><a href="#method-i-draw_tile">#draw_tile</a>
     
@@ -145,7 +145,6 @@ href="TileBag.html">TileBag</a></p>
           <span class="ruby-value">:G</span>, <span class="ruby-value">:G</span>, <span class="ruby-value">:G</span>, <span class="ruby-value">:B</span>, <span class="ruby-value">:B</span>, <span class="ruby-value">:C</span>, <span class="ruby-value">:C</span>, <span class="ruby-value">:M</span>, <span class="ruby-value">:M</span>, <span class="ruby-value">:P</span>, <span class="ruby-value">:P</span>, <span class="ruby-value">:F</span>,
           <span class="ruby-value">:F</span>, <span class="ruby-value">:H</span>, <span class="ruby-value">:H</span>, <span class="ruby-value">:V</span>, <span class="ruby-value">:V</span>, <span class="ruby-value">:W</span>, <span class="ruby-value">:W</span>, <span class="ruby-value">:Y</span>, <span class="ruby-value">:Y</span>, <span class="ruby-value">:K</span>, <span class="ruby-value">:J</span>, <span class="ruby-value">:X</span>,
           <span class="ruby-value">:Q</span>, <span class="ruby-value">:Z</span>]
-
 <span class="ruby-keyword">end</span></pre>
           </div>
           
@@ -157,10 +156,10 @@ href="TileBag.html">TileBag</a></p>
       </div>
 
     
-      <div id="method-c-point_for" class="method-detail ">
+      <div id="method-c-points_for" class="method-detail ">
         
         <div class="method-heading">
-          <span class="method-name">point_for</span><span
+          <span class="method-name">points_for</span><span
             class="method-args">(tile)</span>
           
           <span class="method-click-advice">click to toggle source</span>
@@ -175,10 +174,10 @@ href="TileBag.html">TileBag</a></p>
           
 
           
-          <div class="method-source-code" id="point_for-source">
-            <pre><span class="ruby-comment"># File tile_bag.rb, line 31</span>
-<span class="ruby-keyword">def</span> <span class="ruby-keyword">self</span>.<span class="ruby-identifier">point_for</span> (<span class="ruby-identifier">tile</span>)
-      <span class="ruby-identifier">point_hash</span> = { <span class="ruby-constant">A</span><span class="ruby-operator">:</span> <span class="ruby-value">1</span>, <span class="ruby-constant">B</span><span class="ruby-operator">:</span> <span class="ruby-value">3</span>, <span class="ruby-constant">C</span><span class="ruby-operator">:</span> <span class="ruby-value">3</span>, <span class="ruby-constant">D</span><span class="ruby-operator">:</span> <span class="ruby-value">4</span>, <span class="ruby-constant">E</span><span class="ruby-operator">:</span> <span class="ruby-value">1</span>, <span class="ruby-constant">F</span><span class="ruby-operator">:</span> <span class="ruby-value">4</span>, <span class="ruby-constant">G</span><span class="ruby-operator">:</span> <span class="ruby-value">2</span>,
+          <div class="method-source-code" id="points_for-source">
+            <pre><span class="ruby-comment"># File tile_bag.rb, line 30</span>
+<span class="ruby-keyword">def</span> <span class="ruby-keyword">self</span>.<span class="ruby-identifier">points_for</span> (<span class="ruby-identifier">tile</span>)
+      <span class="ruby-identifier">point_hash</span> = { <span class="ruby-constant">A</span><span class="ruby-operator">:</span> <span class="ruby-value">1</span>, <span class="ruby-constant">B</span><span class="ruby-operator">:</span> <span class="ruby-value">3</span>, <span class="ruby-constant">C</span><span class="ruby-operator">:</span> <span class="ruby-value">3</span>, <span class="ruby-constant">D</span><span class="ruby-operator">:</span> <span class="ruby-value">2</span>, <span class="ruby-constant">E</span><span class="ruby-operator">:</span> <span class="ruby-value">1</span>, <span class="ruby-constant">F</span><span class="ruby-operator">:</span> <span class="ruby-value">4</span>, <span class="ruby-constant">G</span><span class="ruby-operator">:</span> <span class="ruby-value">2</span>,
                                       <span class="ruby-constant">H</span><span class="ruby-operator">:</span> <span class="ruby-value">4</span>, <span class="ruby-constant">I</span><span class="ruby-operator">:</span> <span class="ruby-value">1</span>, <span class="ruby-constant">J</span><span class="ruby-operator">:</span> <span class="ruby-value">8</span>, <span class="ruby-constant">K</span><span class="ruby-operator">:</span> <span class="ruby-value">5</span>, <span class="ruby-constant">L</span><span class="ruby-operator">:</span> <span class="ruby-value">1</span>, <span class="ruby-constant">M</span><span class="ruby-operator">:</span> <span class="ruby-value">3</span>, <span class="ruby-constant">N</span><span class="ruby-operator">:</span> <span class="ruby-value">1</span>, 
                                       <span class="ruby-constant">O</span><span class="ruby-operator">:</span> <span class="ruby-value">1</span>, <span class="ruby-constant">P</span><span class="ruby-operator">:</span> <span class="ruby-value">3</span>, <span class="ruby-constant">Q</span><span class="ruby-operator">:</span> <span class="ruby-value">10</span>, <span class="ruby-constant">R</span><span class="ruby-operator">:</span> <span class="ruby-value">1</span>, <span class="ruby-constant">S</span><span class="ruby-operator">:</span> <span class="ruby-value">1</span>, <span class="ruby-constant">T</span><span class="ruby-operator">:</span> <span class="ruby-value">1</span>, <span class="ruby-constant">U</span><span class="ruby-operator">:</span> <span class="ruby-value">1</span>, 
                                       <span class="ruby-constant">V</span><span class="ruby-operator">:</span> <span class="ruby-value">4</span>, <span class="ruby-constant">W</span><span class="ruby-operator">:</span> <span class="ruby-value">4</span>, <span class="ruby-constant">X</span><span class="ruby-operator">:</span> <span class="ruby-value">8</span>, <span class="ruby-constant">Y</span><span class="ruby-operator">:</span> <span class="ruby-value">4</span>, <span class="ruby-constant">Z</span><span class="ruby-operator">:</span> <span class="ruby-value">10</span> }
@@ -222,7 +221,7 @@ end of the shuffled array.</p>
 
           
           <div class="method-source-code" id="draw_tile-source">
-            <pre><span class="ruby-comment"># File tile_bag.rb, line 20</span>
+            <pre><span class="ruby-comment"># File tile_bag.rb, line 19</span>
 <span class="ruby-keyword">def</span> <span class="ruby-identifier">draw_tile</span>
   <span class="ruby-ivar">@bag</span>.<span class="ruby-identifier">shuffle</span>
       <span class="ruby-ivar">@bag</span>.<span class="ruby-identifier">pop</span>
@@ -256,7 +255,7 @@ end of the shuffled array.</p>
 
           
           <div class="method-source-code" id="empty-3F-source">
-            <pre><span class="ruby-comment"># File tile_bag.rb, line 26</span>
+            <pre><span class="ruby-comment"># File tile_bag.rb, line 25</span>
 <span class="ruby-keyword">def</span> <span class="ruby-identifier">empty?</span>
   <span class="ruby-ivar">@bag</span>.<span class="ruby-identifier">empty?</span>
 <span class="ruby-keyword">end</span></pre>
@@ -278,7 +277,7 @@ end of the shuffled array.</p>
 
 <footer id="validator-badges" role="contentinfo">
   <p><a href="http://validator.w3.org/check/referer">Validate</a>
-  <p>Generated by <a href="http://docs.seattlerb.org/rdoc/">RDoc</a> 4.2.0.
+  <p>Generated by <a href="http://docs.seattlerb.org/rdoc/">RDoc</a> 4.2.2.
   <p>Based on <a href="http://deveiate.org/projects/Darkfish-RDoc/">Darkfish</a> by <a href="http://deveiate.org">Michael Granger</a>.
 </footer>
 
