@@ -19,7 +19,8 @@ class WhenRemovingWordsFromTileRacks   < Minitest::Test
     @tr.append(:W)
     @tr.append(:U)
 
-    assert_equal("READ", @tr.remove_word("READ"))
+	word = @tr.remove_word("READ")
+    assert_equal("READ", word.to_s)
   end
 
   # Test that a word can be removed if the tiles are not in order on the rack.
@@ -32,7 +33,8 @@ class WhenRemovingWordsFromTileRacks   < Minitest::Test
     @tr.append(:A)
     @tr.append(:U)
 
-    assert_equal("READ", @tr.remove_word("READ"))
+	 word = @tr.remove_word("READ")
+    assert_equal("READ", word.to_s)
   end
 
   # Test that a word with some duplicate letters can be removed from the rack.
@@ -45,7 +47,8 @@ class WhenRemovingWordsFromTileRacks   < Minitest::Test
     @tr.append(:M)
     @tr.append(:O)
 
-    assert_equal("TOOTH", @tr.remove_word("TOOTH"))
+	word = @tr.remove_word("TOOTH")
+    assert_equal("TOOTH", word.to_s)
   end
 
   # Test that a word can be removed without removing duplicate letters being removed from the rack.
@@ -58,6 +61,7 @@ class WhenRemovingWordsFromTileRacks   < Minitest::Test
     @tr.append(:O)
     @tr.append(:O)
 
-    assert_equal("TOOTH", @tr.remove_word("TOOTH"))
+	word = @tr.remove_word("TOOTH")
+    assert_equal("TOOTH", word.to_s)
   end
 end

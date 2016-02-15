@@ -30,8 +30,8 @@ class TileRack < TileGroup
   
   # This method will remove and return the word from the tile array.
   def remove_word(text)
-	word = ""
-    text.each_char { |x| word += remove(x.to_sym) }
+	word = Word.new
+    text.each_char { |x| word.append(remove(x.to_sym).to_sym) }
 	
 	word
   end
