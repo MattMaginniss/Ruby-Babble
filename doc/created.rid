@@ -1,15 +1,15 @@
-Sun, 14 Feb 2016 21:39:01 +0000
+Mon, 15 Feb 2016 00:17:25 +0000
 ./Gemfile	Wed, 27 Jan 2016 23:55:45 +0000
 ./Gemfile.lock	Thu, 28 Jan 2016 00:43:49 +0000
 ./Rakefile	Thu, 28 Jan 2016 00:44:22 +0000
-./tests/when_converting_tile_group_to_string.rb	Sat, 13 Feb 2016 21:43:57 +0000
+./tests/when_converting_tile_group_to_string.rb	Sun, 14 Feb 2016 21:39:54 +0000
 ./tests/when_drawing_tiles.rb	Mon, 08 Feb 2016 14:43:54 +0000
-./tests/when_finding_number_of_tiles_needed.rb	Sun, 14 Feb 2016 21:31:05 +0000
-./tests/when_getting_points.rb	Sat, 13 Feb 2016 22:42:33 +0000
-./tests/when_removing_words_from_tile_racks.rb	Sun, 14 Feb 2016 21:35:11 +0000
+./tests/when_finding_number_of_tiles_needed.rb	Sun, 14 Feb 2016 21:39:54 +0000
+./tests/when_getting_points.rb	Sun, 14 Feb 2016 21:39:54 +0000
+./tests/when_removing_words_from_tile_racks.rb	Mon, 15 Feb 2016 00:09:22 +0000
 ./tests/when_scoring_words.rb	Mon, 08 Feb 2016 14:43:54 +0000
-./tests/when_seeing_if_a_tile_rack_has_the_tiles_needed_to_make_words.rb	Sun, 14 Feb 2016 21:38:53 +0000
-./tile_bag.rb	Thu, 11 Feb 2016 22:44:40 +0000
-./tile_group.rb	Sun, 14 Feb 2016 21:27:27 +0000
-./tile_rack.rb	Sun, 14 Feb 2016 21:27:43 +0000
-./word.rb	Thu, 11 Feb 2016 22:47:15 +0000
+./tests/when_seeing_if_a_tile_rack_has_the_tiles_needed_to_make_words.rb	Sun, 14 Feb 2016 21:39:54 +0000
+./tile_bag.rb	Sun, 14 Feb 2016 21:39:54 +0000
+./tile_group.rb	Sun, 14 Feb 2016 21:39:54 +0000
+./tile_rack.rb	Mon, 15 Feb 2016 00:11:19 +0000
+./word.rb	Sun, 14 Feb 2016 21:39:54 +0000

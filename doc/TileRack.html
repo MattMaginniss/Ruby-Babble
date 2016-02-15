@@ -262,8 +262,8 @@ full tile rack.</p>
           <div class="method-source-code" id="remove_word-source">
             <pre><span class="ruby-comment"># File tile_rack.rb, line 32</span>
 <span class="ruby-keyword">def</span> <span class="ruby-identifier">remove_word</span>(<span class="ruby-identifier">text</span>)
-      <span class="ruby-identifier">word</span> = <span class="ruby-string">&quot;&quot;</span>
-  <span class="ruby-identifier">text</span>.<span class="ruby-identifier">each_char</span> { <span class="ruby-operator">|</span><span class="ruby-identifier">x</span><span class="ruby-operator">|</span> <span class="ruby-identifier">word</span> <span class="ruby-operator">+=</span> <span class="ruby-identifier">remove</span>(<span class="ruby-identifier">x</span>.<span class="ruby-identifier">to_sym</span>) }
+      <span class="ruby-identifier">word</span> = <span class="ruby-constant">Word</span>.<span class="ruby-identifier">new</span>
+  <span class="ruby-identifier">text</span>.<span class="ruby-identifier">each_char</span> { <span class="ruby-operator">|</span><span class="ruby-identifier">x</span><span class="ruby-operator">|</span> <span class="ruby-identifier">word</span>.<span class="ruby-identifier">append</span>(<span class="ruby-identifier">remove</span>(<span class="ruby-identifier">x</span>.<span class="ruby-identifier">to_sym</span>).<span class="ruby-identifier">to_sym</span>) }
       
       <span class="ruby-identifier">word</span>
 <span class="ruby-keyword">end</span></pre>
