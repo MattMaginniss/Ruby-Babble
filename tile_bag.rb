@@ -17,7 +17,7 @@ class TileBag
   # This will shuffle the array of tiles, remove and return 
   # the tile on the end of the shuffled array.
   def draw_tile
-    @bag.shuffle
+    @bag.shuffle!
 	@bag.pop
   end
 
