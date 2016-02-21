@@ -72,11 +72,18 @@
 
 <main role="main" aria-label="Page Rakefile">
 
-<p>require &#39;rake/testtask&#39;</p>
+<p>require &#39;rake/testtask&#39; require &#39;../rabble/babble.rb&#39;</p>
 
 <p>Rake::TestTask.new do |t|</p>
 
 <pre class="ruby"><span class="ruby-identifier">t</span>.<span class="ruby-identifier">pattern</span> = <span class="ruby-string">&quot;tests/when_*.rb&quot;</span>
+</pre>
+
+<p>end</p>
+
+<p>Rake::babble do |t|</p>
+
+<pre class="ruby"><span class="ruby-identifier">ruby</span> <span class="ruby-identifier">babble</span>.<span class="ruby-identifier">rb</span>
 </pre>
 
 <p>end</p>
